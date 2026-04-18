@@ -12,7 +12,7 @@ function sendMail(){
   let phone = document.getElementById("three").value;
   let address = document.getElementById("four").value;
   let date = document.getElementById("five").value;
-  let selectart= document.getElementById("six").value;
+  let limitation= document.getElementById("six").value;
 
 
   if(name && phone && address){
@@ -21,7 +21,7 @@ function sendMail(){
       phone: phone,
       address: address,
       date: date,
-      selectart:selectart
+      limitation:limitation
     }).then(function(){
       alert("Booking successful 🎉");
     }, function(){
@@ -52,7 +52,7 @@ function sendMail(){
   <input type="number" id="three" placeholder="Phone number" required><br>
   <input type="text" id="four" placeholder="Address" required><br>
   <input type="text" id="five" placeholder="final date" required><br>
-  <input type="text" id="six" placeholder="select your art " required><br>
+  <input type="text" id="six" placeholder="choose your limit " required><br>
   <button type="submit" id="senve">BOOK NOW</button>
 </form>
 
