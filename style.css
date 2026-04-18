@@ -3,25 +3,36 @@ body{
 #one{
         color:rgb(238, 73, 13);
     }
-#two{
-    margin-top: 20px;
+#two{ 
 
-}
-#three{
     margin-top: 20px;
+    padding: 20px;
 }
-#four{
+#three{ 
+
     margin-top: 20px;
+    padding: 20px;
 }
-#five{
+#four{ 
+
     margin-top: 20px;
+    padding: 20px;
 }
-#six{
+#five{ 
+
     margin-top: 20px;
+    padding: 20px;
 }
+#six{ 
+
+    margin-top: 20px;
+    padding: 20px;
+}
+
 #seven{
     margin-top: 20px;
     background-color: blue;
     margin: 20px;
+    padding: 15px;
     
 }
