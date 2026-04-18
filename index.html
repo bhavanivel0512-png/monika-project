@@ -11,12 +11,17 @@ function sendMail(){
   let name = document.getElementById("two").value;
   let phone = document.getElementById("three").value;
   let address = document.getElementById("four").value;
+  let date = document.getElementById("five").value;
+  let selectart= document.getElementById("six").value;
+
 
   if(name && phone && address){
     emailjs.send("service_n8sxaer","template_rpf1vv2",{
       name: name,
       phone: phone,
-      address: address
+      address: address,
+      date: date,
+      selectart:selectart
     }).then(function(){
       alert("Booking successful 🎉");
     }, function(){
