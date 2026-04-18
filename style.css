@@ -1,0 +1,20 @@
+body{
+    background-image: url(img1);}
+#one{
+        color:rgb(238, 73, 13);
+    }
+#two{
+    margin-top: 20px;
+
+}
+#three{
+    margin-top: 20px;
+}
+#four{
+    margin-top: 20px;
+}
+#five{
+    margin-top: 20px;
+    background-color: blue;
+    
+}
