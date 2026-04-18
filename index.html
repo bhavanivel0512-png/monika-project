@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("fdxlMYyzJbdBmpSPY");
+})();
+
+function sendMail(){
+  let name = document.getElementById("two").value;
+  let phone = document.getElementById("three").value;
+  let address = document.getElementById("four").value;
+
+  if(name && phone && address){
+    emailjs.send("service_n8sxaer","template_rpf1vv2",{
+      name: name,
+      phone: phone,
+      address: address
+    }).then(function(){
+      alert("Booking successful 🎉");
+    }, function(){
+      alert("Failed 😬");
+    });
+  } else {
+    alert("Please fill all details 😬");
+  }
+}
+</script>
+
+<center>
+<h1>🎀𝕸𝕺𝕹𝕴 𝕸𝖊𝖍𝖆𝖓𝖉𝖎🎀</h1>
+<h2 id="one">Newly opened 🥳</h2>
+<h3>𝔾𝕖𝕥 𝟝𝟘% 𝕆𝔽𝔽🎊 𝕥𝕠 𝕗𝕚𝕣𝕤𝕥 𝕔𝕦𝕤𝕥𝕠𝕞𝕖𝕣🎁</h3>
+
+<hr><hr>
+
+<h3>Front half hand 350 /only 🎉</h3><br>
+<h3>Front full hand 750 /only 🎉</h3><br>
+<h3>Front & Back full hand 1300 /only 🎉</h3><br>
+
+<hr>
+
+<form onsubmit="event.preventDefault(); sendMail();">
+  <input type="text" id="two" placeholder="Enter your name" required><br>
+  <input type="number" id="three" placeholder="Phone number" required><br>
+  <input type="text" id="four" placeholder="Address" required><br>
+  <button type="submit" id="five">BOOK NOW</button>
+</form>
+
+</center>
